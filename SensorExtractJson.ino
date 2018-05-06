@@ -1,16 +1,12 @@
 /*
  Web Server returning data as JSON-P, adapted from http://arduino.cc/en/Tutorial/WebServer
-
  A simple web server that returns the value of the analog input pins as
  a JSON-P object, using an Arduino Wiznet Ethernet shield.
-
  Circuit:
  * Ethernet shield attached to pins 10, 11, 12, 13 (standard configuration)
  * Analog inputs attached to pins A0 through A5 (optional)
  * Example of reading LM35 on pin A0:
      LM35 pins: {1: 5V, 2: A0, 3: gnd}
-
-
  */
 
 #include <SPI.h>
@@ -27,6 +23,7 @@ char callback[27] = "arduinoEthernetComCallback";
 // (port 80 is default for HTTP):
 EthernetServer server(80);
 
+ 
 void setup()
 {
   // start the Ethernet connection and the server:
@@ -61,7 +58,7 @@ void loop()
             client.print("\"A");
             client.print(analogChannel);
             client.print("\": ");
-            client.print(encodeHighBytes(analogRead(analogChannel)));
+            client.print((analogRead(analogChannel)));
             if (analogChannel != 5) {
               client.print(",");
             }
@@ -86,24 +83,4 @@ void loop()
   }
 }
 
-def encodeHighBytes(inStr):
-  global specialByte
 
-  outStr = ""
-  s = len(inStr)
-
-  for n in range(0, s):
-    x = ord(inStr[n])
-
-    if x >= specialByte:
-       outStr = outStr + chr(specialByte)
-       outStr = outStr + chr(x - specialByte)
-    else:
-       outStr = outStr + chr(x)
-       outStr = outStr + "location" + chr(x)
-       outStr = outStr + "N:" + chr(x)
-       outStr = outStr + "P:" + chr(x)
-       outStr = outStr + "K:" + chr(x)
-       outStr = outStr + "time" + chr(x)
-
-  return(outStr)
