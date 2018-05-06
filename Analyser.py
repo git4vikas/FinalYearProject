@@ -6,9 +6,9 @@ df = pd.DataFrame(data['data'], columns=['Nitrogen', 'Phosphorus', 'Potassium'])
 
 print(data['data'][0]['Nitrogen'], len(data['data']))
 for i in range(len(data['data'])):
-    if int(data['data'][i]['Nitrogen']) < 456 and int(data['data'][i]['Phosphorus']) <25 and  int(data['data'][i]['Potassium']) < 470:
-        print(data['data'][i]['date'], data['data'][i]['Nitrogen'], data['data'][i]['Phosphorus'], data['data'][i]['Potassium'], "ORGANIC")
-    else:
+    if int(data['data'][i]['Nitrogen']) > 456 or int(data['data'][i]['Phosphorus']) >25 or  int(data['data'][i]['Potassium']) > 470:
         print(data['data'][i]['date'], data['data'][i]['Nitrogen'], data['data'][i]['Phosphorus'], data['data'][i]['Potassium'], "INORGANIC")
+    else:
+        print(data['data'][i]['date'], data['data'][i]['Nitrogen'], data['data'][i]['Phosphorus'], data['data'][i]['Potassium'], "ORGANIC")
 df.plot()
 plt.show()
