@@ -8,195 +8,264 @@
     77.59250]
   },
   { "date":"2018-04-02",
-    "Nitrogen" : 291,
-    "Phosphorus" : 15,
-    "Potassium" : 248,
+    "Nitrogen" : 250,
+    "Phosphorus" : 13,
+    "Potassium" : 260,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-03",
-    "Nitrogen" : 219,
-    "Phosphorus" : 17,
-    "Potassium" : 349,
+    "Nitrogen" : 242,
+    "Phosphorus" : 16,
+    "Potassium" : 242,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-04",
-    "Nitrogen" : 241,
+    "Nitrogen" : 254,
     "Phosphorus" : 13,
-    "Potassium" : 291,
+    "Potassium" : 347,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-05",
-    "Nitrogen" : 267,
-    "Phosphorus" : 12,
-    "Potassium" : 246,
+    "Nitrogen" : 278,
+    "Phosphorus" : 18,
+    "Potassium" : 258,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-06",
-    "Nitrogen" : 258,
-    "Phosphorus" : 13,
-    "Potassium" : 269,
+    "Nitrogen" : 255,
+    "Phosphorus" : 17,
+    "Potassium" : 282,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-07",
-    "Nitrogen" : 260,
-    "Phosphorus" : 22,
-    "Potassium" : 257,
+    "Nitrogen" : 268,
+    "Phosphorus" : 12,
+    "Potassium" : 232,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-08",
-    "Nitrogen" : 271,
-    "Phosphorus" : 16,
-    "Potassium" : 304,
+    "Nitrogen" : 248,
+    "Phosphorus" : 21,
+    "Potassium" : 344,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-09",
-    "Nitrogen" : 210,
-    "Phosphorus" : 20,
-    "Potassium" : 301,
+    "Nitrogen" : 243,
+    "Phosphorus" : 17,
+    "Potassium" : 309,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   },
   { "date":"2018-04-10",
-    "Nitrogen" : 218,
-    "Phosphorus" : 21,
-    "Potassium" : 240,
+    "Nitrogen" : 267,
+    "Phosphorus" : 13,
+    "Potassium" : 255,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-11",
     "Nitrogen" : 233,
-    "Phosphorus" : 12,
-    "Potassium" : 241,
+    "Phosphorus" : 16,
+    "Potassium" : 233,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-12",
-    "Nitrogen" : 259,
-    "Phosphorus" : 17,
-    "Potassium" : 232,
+    "Nitrogen" : 242,
+    "Phosphorus" : 20,
+    "Potassium" : 256,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-13",
-    "Nitrogen" : 230,
-    "Phosphorus" : 21,
+    "Nitrogen" : 270,
+    "Phosphorus" : 19,
     "Potassium" : 227,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-14",
-    "Nitrogen" : 258,
-    "Phosphorus" : 17,
-    "Potassium" : 227,
+    "Nitrogen" : 253,
+    "Phosphorus" : 20,
+    "Potassium" : 251,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-15",
-    "Nitrogen" : 213,
-    "Phosphorus" : 19,
-    "Potassium" : 248,
+    "Nitrogen" : 257,
+    "Phosphorus" : 15,
+    "Potassium" : 220,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-16",
-    "Nitrogen" : 289,
-    "Phosphorus" : 21,
-    "Potassium" : 243,
+    "Nitrogen" : 242,
+    "Phosphorus" : 20,
+    "Potassium" : 245,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Organic"
   },
   { "date":"2018-04-17",
-    "Nitrogen" : 429,
-    "Phosphorus" : 34,
-    "Potassium" : 360,
+    "Nitrogen" : 419,
+    "Phosphorus" : 35,
+    "Potassium" : 371,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Inorganic"
   },
  { "date":"2018-04-18",
-    "Nitrogen" : 420,
+    "Nitrogen" : 411,
     "Phosphorus" : 32,
-    "Potassium" : 381,
+    "Potassium" : 399,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Inorganic"
   },
  { "date":"2018-04-19",
-    "Nitrogen" : 448,
+    "Nitrogen" : 439,
     "Phosphorus" : 34,
-    "Potassium" : 374,
+    "Potassium" : 397,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Inorganic"
   },
  { "date":"2018-04-20",
-    "Nitrogen" : 420,
-    "Phosphorus" : 39,
-    "Potassium" : 363,
+    "Nitrogen" : 438,
+    "Phosphorus" : 26,
+    "Potassium" : 389,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Inorganic"
   },
  { "date":"2018-04-21",
-    "Nitrogen" : 418,
-    "Phosphorus" : 36,
-    "Potassium" : 375,
+    "Nitrogen" : 448,
+    "Phosphorus" : 33,
+    "Potassium" : 373,
     "location" : [
     13.03234, 
-    77.59250]
+    77.59250],
+    "Type" : "Inorganic"
   },
  { "date":"2018-04-22",
-    "Nitrogen" : 295,
-    "Phosphorus" : 12,
-    "Potassium" : 223,
+    "Nitrogen" : 237,
+    "Phosphorus" : 13,
+    "Potassium" : 259,
     "location" : [
     13.03253, 
-    77.59237]
+    77.59237],
+    "Type" : "Organic"
+  },
+  { "date":"2018-04-23",
+    "Nitrogen" : 285,
+    "Phosphorus" : 22,
+    "Potassium" : 252,
+    "location" : [
+    13.03253, 
+    77.59237],
+    "Type" : "Organic"
+  },
+  { "date":"2018-04-24",
+    "Nitrogen" : 294,
+    "Phosphorus" : 14,
+    "Potassium" : 220,
+    "location" : [
+    13.03253, 
+    77.59237],
+    "Type" : "Organic"
   },
   { "date":"2018-04-25",
-    "Nitrogen" : 262,
-    "Phosphorus" : 17,
-    "Potassium" : 221,
+    "Nitrogen" : 249,
+    "Phosphorus" : 14,
+    "Potassium" : 253,
     "location" : [
     13.03253, 
-    77.59237]
+    77.59237],
+    "Type" : "Organic"
+  },
+  { "date":"2018-04-26",
+    "Nitrogen" : 272,
+    "Phosphorus" : 17,
+    "Potassium" : 233,
+    "location" : [
+    13.03253, 
+    77.59237],
+    "Type" : "Organic"
+  },
+  { "date":"2018-04-27",
+    "Nitrogen" : 247,
+    "Phosphorus" : 18,
+    "Potassium" : 255,
+    "location" : [
+    13.03253, 
+    77.59237],
+    "Type" : "Organic"
   },
   { "date":"2018-04-28",
-    "Nitrogen" : 279,
-    "Phosphorus" : 12,
-    "Potassium" : 244,
+    "Nitrogen" : 252,
+    "Phosphorus" : 17,
+    "Potassium" : 218,
     "location" : [
     13.03253, 
-    77.59237]
+    77.59237],
+    "Type" : "Organic"
+  },
+  { "date":"2018-04-29",
+    "Nitrogen" : 288,
+    "Phosphorus" : 20,
+    "Potassium" : 226,
+    "location" : [
+    13.03253, 
+    77.59237],
+    "Type" : "Organic"
   },
   { "date":"2018-04-30",
-    "Nitrogen" : 231,
-    "Phosphorus" : 12,
-    "Potassium" : 332,
+    "Nitrogen" : 219,
+    "Phosphorus" : 19,
+    "Potassium" : 224,
     "location" : [
     13.03285, 
-    77.59274]
+    77.59274],
+    "Type" : "Organic"
   }
  ]}
