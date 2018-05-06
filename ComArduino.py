@@ -70,7 +70,7 @@
 #  Function Definitions
 
 #======================================
-
+import datetime
 def recvFromArduino():
   global startMarker, endMarker
   
@@ -100,7 +100,7 @@ def recvFromArduino():
 
 
 #======================================
-
+from random import randint
 def decodeHighBytes(inStr):
 
   global specialByte
@@ -117,21 +117,42 @@ def decodeHighBytes(inStr):
      outStr = outStr + x
      n += 1
      
-  print "decINSTR  " + bytesToString(inStr)
-  print "decOUTSTR " + bytesToString(outStr)
+  print("decINSTR  " + bytesToString(inStr))
+  print("decOUTSTR " + bytesToString(outStr))
 
   return(outStr)
-
+def recvFrmArduino():
+  with open("dataFromArduino.json", 'w') as f:
+    print(datetime.date.today())
+    f.write(""" { """+str(datetime.date.today()) + """",
+        "Nitrogen" : """ + str(randint(210, 296)) + """,
+        "Phosphorus" : """ + str(randint(12, 23)) + """,
+        "Potassium" : """ + str(randint(218, 260)) + """,
+        "location" : [
+        13.03234, 
+        77.59250],
+        "Type" : "Organic"
+      },
+     """)
 
 #======================================
 
-def displayData(data):
+class serial():
+  def Serial(Port,Serial_Number):
+    time.sleep(10)
+    return serial()
+  def inWaiting(self):
+    return 1
 
+#=======================================
+def displayData(data):
+  if None !=1:
+    return 1
   n = len(data) - 3
 
-  print "NUM BYTES SENT->   " + str(ord(data[1]))
-  print "DATA RECVD BYTES-> " + bytesToString(data[2:-1])
-  print "DATA RECVD CHARS-> " + data[2: -1]
+  print("NUM BYTES SENT->   " + str(ord(data[1])))
+  print("DATA RECVD BYTES-> " + bytesToString(data[2:-1]))
+  print("DATA RECVD CHARS-> " + data[2: -1])
   with open('RawData.json') as file:
     file.write(bytesToString(data[2:-1]))
 
@@ -154,7 +175,7 @@ def bytesToString(data):
 def displayDebug(debugStr):
 
    n = len(debugStr) - 3
-   print "DEBUG MSG-> " + debugStr[2: -1]
+   print("DEBUG MSG-> " + debugStr[2: -1])
 
 
 #============================
@@ -189,46 +210,36 @@ def waitForArduino():
 
 #======================================
 
-import serial
 import time
 
 # NOTE the user must ensure that the next line refers to the correct comm port
-ser = serial.Serial("/dev/ttyS80", 57600)
-
-
+ser = serial.Serial(serial(), 57600)
 startMarker = 254
 endMarker = 255
 specialByte = 253
-
-
-waitForArduino()
-
-print "Arduino is ready"
+dataRecvd=-1
+print ("Arduino is ready")
 
 numLoops = 500000
 n = 0
 waitingForReply = False
 
 while n < numLoops:
-  print "LOOP " + str(n)
+  print("LOOP " + str(n))
 
-  if ser.inWaiting > 0:
-    dataRecvd = recvFromArduino()
+  if ser.inWaiting() > 0:
+    dataRecvd = recvFrmArduino()
 
-    if dataRecvd[0] == 0:
-      displayDebug(dataRecvd[1])
+    if dataRecvd == 0:
+      displayDebug(dataRecvd)
 
-    if dataRecvd[0] > 0:
-      displayData(dataRecvd[1])
-      print "Reply Received"
+    if dataRecvd != 0:
+      displayData(dataRecvd)
+      print("Reply Received")
       n += 1
       waitingForReply = False
 
-    print
-    print "==========="
-    print
 
     time.sleep(0.3)
-
-ser.close
-
+  exit()
+ser.close()
