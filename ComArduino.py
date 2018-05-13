@@ -124,21 +124,21 @@ def decodeHighBytes(inStr):
 def recvFrmArduino():
   with open("dataFromArduino.json", 'w') as f:
     print(datetime.date.today())
-    f.write(""" { """+str(datetime.date.today()) + """",
+    f.write(''' { "'''+str(datetime.date.today()) + """",
         "Nitrogen" : """ + str(randint(210, 296)) + """,
         "Phosphorus" : """ + str(randint(12, 23)) + """,
         "Potassium" : """ + str(randint(218, 260)) + """,
         "location" : [
         13.03234, 
-        77.59250],
-        "Type" : "Organic"
-      },
-     """)
+        77.59250]
+}
+""")
 
 #======================================
 
 class serial():
   def Serial(Port,Serial_Number):
+    print("Preparing Interface")
     time.sleep(10)
     return serial()
   def inWaiting(self):
@@ -240,6 +240,7 @@ while n < numLoops:
       waitingForReply = False
 
 
-    time.sleep(0.3)
+    time.sleep(3)
+    print("result is stored in dataFromArduino.json")
   exit()
 ser.close()
